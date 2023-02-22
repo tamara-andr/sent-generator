@@ -21,7 +21,7 @@ function generateSentences() {
   
   let suspectedSentences = [
     `Patient has suspected ${diseaseName}.`,
-    `Patient is being monitored for suspected ${diseaseName}.`,
+    `Patient is here today for suspicion of ${diseaseName}.`,
     `Note: Suspicion for ${diseaseName} in patient.`,
     `Tests were inconclusive but ${diseaseName} is suspected.`,
     `I suspect the diagnosis of ${diseaseName}.`
@@ -30,7 +30,7 @@ function generateSentences() {
   let recurrentSentences = [
     `Recurrent ${diseaseName} is present.`,
     `Patient is experiencing a relapse of ${diseaseName}.`,
-    `Patient has a history of ${diseaseName} and is experiencing a recurrence.`,
+    `Patient has a history of ${diseaseName} recurrence.`,
     `After a period of remission, patient is experiencing a recurrence of ${diseaseName}.`,
     `Patient has experienced multiple recurrences of ${diseaseName}.`
   ];
