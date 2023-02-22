@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disease Sentence Generator</title>
+	<script src="script.js"></script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		form {
+			margin: 0 auto;
+			width: 60%;
+			text-align: center;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="text"] {
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			width: 300px;
+			text-align: center;
+		}
+		button {
+			padding: 10px;
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+		button:hover {
+			background-color: #45a049;
+		}
+		.result {
+			margin: 0 auto;
+			margin-top: 30px;
+			padding: 20px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: #f5f5f5;
+			width: 60%;
+		}
+		h2 {
+			margin-top: 20px;
+		}
+		.cat-image {
+			display: flex;
+			justify-content: center;
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Disease Sentence Generator</h1>
+	<form>
+		<label for="disease-name">Enter disease name:</label>
+		<input type="text" id="disease-name" placeholder="e.g. Arthritis">
+		<button onclick="generateSentences()">Generate</button>
+	</form>
+	<div class="result">
+		<h2>Positive case:</h2>
+		<div id="positive-case-result"></div>
+		<h2>Negative case:</h2>
+		<div id="negative-case-result"></div>
+		<h2>Suspected:</h2>
+		<div id="suspected-result"></div>
+		<h2>Recurrent:</h2>
+		<div id="recurrent-result"></div>
+	</div>
+	<div class="cat-image">
+		<img src="https://freesvg.org/img/Retro-Floral-Cat.png" alt="Cat Image" width="300">
+	</div>
+</body>
+</html>
